@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
+
+/* CSS HEX */
+:root {
+    --star-command-blue: #2274a5ff;
+    --key-lime: #e7eb90ff;
+    --naples-yellow: #fadf63ff;
+    --goldenrod: #e6af2eff;
+    --wine: #632b30ff;
+}
+
+
+#portrait {
+    position: relative;
+    height: auto;
+    width: auto;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 90%;
+
+
+}
+
+.nav-item {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#h2Text {
+    text-align: center;
+    padding: 20px;
+}
+
+.skills {
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+.card {
+    text-align: center;
+}
+
+footer {
+    margin-bottom: 50px;
+}
