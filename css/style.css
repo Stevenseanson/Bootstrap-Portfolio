@@ -72,6 +72,7 @@ li {
 
 .card {
     text-align: center;
+    margin: 10px;
 
 }
 
@@ -102,4 +103,10 @@ footer {
     background-color: #e7eb90ff;
 
 
+}
+
+@media only screen and (max-width:1000px) {
+    .Contact {
+        justify-content: center;
+    }
 }
