@@ -3,6 +3,8 @@
 
 }
 
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -49,13 +51,19 @@ h6 {
     padding-right: 10px;
 }
 
-#h2Text {
+.h2Text {
     text-align: center;
     padding: 20px;
+
 }
 
-.skills {
-    text-align: center;
+#SkillsBorder {
+    border-right: solid black 1px;
+}
+
+.blurb {
+
+    margin: 15px;
 }
 
 li {
@@ -64,8 +72,34 @@ li {
 
 .card {
     text-align: center;
+
+}
+
+.card-body {
+    background-color: #e7eb90ff;
+}
+
+#cardHover:hover {
+    opacity: 80%;
+}
+
+.cardShadow {
+    transition: box-shadow .3s;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+.cardShadow:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, .2);
 }
 
 footer {
     margin-bottom: 50px;
+    align-items: center;
+}
+
+.footerCard {
+    background-color: #e7eb90ff;
+
+
 }

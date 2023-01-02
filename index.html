@@ -6,7 +6,7 @@
     <!--Meta Tags-->
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sean Stevenson // Web Developer</title>
 
@@ -20,29 +20,36 @@
             background-image: url(./images/clouds.jpg);
             background-size: cover;
         }
+
+        link:hover {
+            cursor: pointer
+        }
     </style>
 
 </head>
 
 <body>
+
+
     <!--Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light customNav" style="background-color: #e7eb90ff">
         <a class="navbar-brand" href="#">Sean Stevenson</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
             </span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item active">
                     <a class="nav-link" href="#workSection">Portfolio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#SkillsAbout">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#ContactID">Contact</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -64,10 +71,13 @@
         </div>
     </header>
 
+
+    <hr class="my-4">
     <!--Work Section-->
 
     <div class="card-deck" id="workSection">
-        <div class="card">
+        <div class="card cardShadow" id="cardHover"
+            onclick='location.href = "https://stevenseanson.github.io/Refactor-Challenge/";'>
             <img class="card-img-top" src="./images/02-portfolio-1.jpg" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">Refactor Challenge</h5>
@@ -76,7 +86,8 @@
 
             </div>
         </div>
-        <div class="card">
+        <div class="card cardShadow" id="cardHover"
+            onclick='location.href = "https://stevenseanson.github.io/biography/";'>
             <img class="card-img-top" src="./images/02-portfolio-2.jpg" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">Biography</h5>
@@ -84,7 +95,8 @@
 
             </div>
         </div>
-        <div class="card">
+        <div class="card cardShadow" id="cardHover"
+            onclick='location.href ="https://stevenseanson.github.io/Portfolio/";'>
             <img class="card-img-top" src="./images/02-portfolio-3.jpg" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">Portfolio 1</h5>
@@ -98,35 +110,38 @@
 
     <!--Skills section-->
 
-    <section>
-        <h2 id="h2Text">Skills</h2>
-        <ul class="skills">
-            <div class="row">
+    <section id="SkillsAbout">
+        <div class="row">
+            <div class="col-lg-4" id="SkillsBorder">
+                <h2 class="h2Text">Skills</h2>
 
-                <div class="col-lg-4">
-                    <li>html</li>
-                </div>
-                <div class="col-lg-4">
-                    <li>css</li>
-                </div>
-                <div class="col-lg-4">
-                    <li>javascript</li>
-                </div>
 
+                <p class="blurb">I intend to learn and expand my knowledge on css, html, and javascript. With a
+                    particular future
+                    focus on figuring out just how positioning works.</p>
             </div>
-        </ul>
+            <div class="col-lg-8">
+                <h2 class="h2Text">About Me</h2>
+
+                <p class="blurb">Sean Stevenson is a Front End Web Developer in training. He currently works as a
+                    bicycle
+                    mechanic and actor. In his spare time he enjoys writing music, playing sport and travelling.
+                </p>
+            </div>
+        </div>
+
     </section>
 
     <hr class="my-4">
 
     <!--Contact Section-->
 
-    <footer class="Contact">
+    <footer class="Contact" id="ContactID">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
+                    <div class="card footerCard" style="width: 18rem;">
+                        <div class="card-body footerCard">
                             <h5 class="card-title">Phone</h5>
 
                             <p class="card-text">+44 7776 085766</p>
@@ -136,7 +151,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="card" style="width: 18rem;">
-                        <div class="card-body">
+                        <div class="card-body footerCard">
                             <h5 class="card-title">Email</h5>
 
                             <p class="card-text">sean.flynn.stevenson@gmail.com</p>
@@ -145,8 +160,8 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
+                    <div class="card " style="width: 18rem;">
+                        <div class="card-body footerCard">
                             <h5 class="card-title">Github</h5>
 
                             <a href="https://github.com/Stevenseanson" class="card-link">Click here</a>
