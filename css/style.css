@@ -3,8 +3,6 @@
 
 }
 
-
-
 html {
     scroll-behavior: smooth;
 }
@@ -35,6 +33,8 @@ h6 {
 }
 
 
+/* Navbar and Hero section below */
+
 #portrait {
     position: relative;
     height: auto;
@@ -57,28 +57,7 @@ h6 {
 
 }
 
-#SkillsBorder {
-    border-right: solid black 1px;
-}
-
-.blurb {
-
-    margin: 15px;
-}
-
-li {
-    list-style: none;
-}
-
-.card {
-    text-align: center;
-    margin: 10px;
-
-}
-
-.card-body {
-    background-color: #e7eb90ff;
-}
+/* Below code is for the Portfolio cards */
 
 #cardHover:hover {
     opacity: 80%;
@@ -94,6 +73,31 @@ li {
     box-shadow: 0 0 11px rgba(33, 33, 33, .2);
 }
 
+/* Below code is for Skills and About me row */
+
+#SkillsBorder {
+    border-right: solid black 1px;
+}
+
+.blurb {
+
+    margin: 15px;
+}
+
+
+.card {
+    text-align: center;
+    margin: 10px;
+
+}
+
+.card-body {
+    background-color: #e7eb90ff;
+}
+
+
+/* The code below is for the footer */
+
 footer {
     margin-bottom: 50px;
     align-items: center;
@@ -102,11 +106,13 @@ footer {
 .footerCard {
     background-color: #e7eb90ff;
 
-
 }
 
-@media only screen and (max-width:1000px) {
-    .Contact {
-        justify-content: center;
-    }
+li {
+    list-style: none;
+}
+
+a:hover {
+    font-style: bold;
+    background-color: var(--naples-yellow);
 }
